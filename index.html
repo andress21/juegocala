@@ -8,6 +8,40 @@
   <title>Platzriv - Jueguito online de carreras y calaveras</title>
 </head>
 <body>
+
+  <div class="playAudio">
+    <audio id="myAudio" autoplay>
+        <source src="https://www.zapsplat.com/wp-content/uploads/2015/music-game/music_zapsplat_game_music_zen_calm_soft_arpeggios_013.mp3" type="audio/ogg">
+      </audio>
+      
+      <div class="soundOn">
+      <i class="fa-solid fa-volume-high" onclick="playAudio()"></i>
+      </div>
+
+      <div class="soundOff">
+        <i class="fa-solid fa-volume-xmark" onclick="pauseAudio()"></i>
+      </div>
+</div>
+<div class="volverJugar inactive">
+<button>VOLVER A JUGAR</button>
+</div>
+
+<div class="inicio">
+<div class="titulo">
+<h1>El Bosque Del Dragon</h1>
+</div> <br>
+<div class="texto">Presiona jugar <br>
+</div><br>
+<div class="emoji"><span>🐉</span></div> <br>
+<div class="jugar">
+<button onclick="jugar()">JUGAR</button>
+</div>
+</div>
+<div class="game-container inactive">
+  <div class="niveles">
+    <p class="niv">Nivel <span id="nivel"></span></p>
+  </div>
+
   <div class="game-container">
     <canvas id="game"></canvas>
     
